@@ -1,4 +1,4 @@
-package org.ingecine.model;
+package com.lct.SpringCine.model;
 
 public class ProductCart {
     private int id, amount;
