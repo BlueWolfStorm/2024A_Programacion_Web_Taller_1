@@ -1,46 +1,37 @@
 package com.example.springBoot.model;
 
+import java.util.ArrayList;
+import java.util.List;
+@lombok.Getter
+@lombok.Setter
 public class Hall {
-    int id;
-    int number;
-    Chair chair;
+
+    private int number;
+    private List<Chair> chairs ;
 
     public Hall() {
     }
 
-    public Hall(int id, int number, Chair chair) {
-        this.id = id;
+    public Hall( int number) {
         this.number = number;
-        this.chair = chair;
+        this.chairs = new ArrayList<Chair>();
     }
 
-    public int getId() {
-        return id;
+
+    public List<Chair> getChairs() {
+        if(chairs == null){
+            chairs = new ArrayList<Chair>();
+        }
+        return chairs;
     }
 
-    public void setId(int id) {
-        this.id = id;
-    }
 
-    public int getNumber() {
-        return number;
-    }
-
-    public void setNumber(int number) {
-        this.number = number;
-    }
-
-    public Chair getChair() {
-        return chair;
-    }
-
-    public void setChair(Chair chair) {
-        this.chair = chair;
-    }
 
     @Override
     public String toString() {
-        return "Hall{" + "id=" + id + ", number=" + number + ", chair=" + chair + '}';
+        return "Hall{" +
+                "number=" + number +
+                ", chairs=" + chairs +
+                '}';
     }
-
 }

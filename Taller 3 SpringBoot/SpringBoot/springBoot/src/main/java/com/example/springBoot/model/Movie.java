@@ -1,34 +1,27 @@
 package com.example.springBoot.model;
 
 public class Movie {
-    int id;
-    String title;
-    String gender;
-    String classification;
-    float duration;
-    String director;
-    String synopsis;
+
+    private String title;
+    private String gender;
+    private String classification;
+    private float duration;
+    private String director;
+    private String synopsis;
 
     public Movie() {
     }
 
-    public Movie(int id, String title, String gender, String classification, float duration, String director, String synopsis) {
-        this.id = id;
-        this.title = title;
-        this.gender = gender;
-        this.classification = classification;
-        this.duration = duration;
-        this.director = director;
-        this.synopsis = synopsis;
+    public Movie( String title, String gender, String classification, float duration, String director, String synopsis) {
+
+        this.setTitle(title);
+        this.setGender(gender);
+        this.setClassification(classification);
+        this.setDuration(duration);
+        this.setDirector(director);
+        this.setSynopsis(synopsis);
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
 
     public String getTitle() {
         return title;
@@ -81,13 +74,12 @@ public class Movie {
     @Override
     public String toString() {
         return "Movie{" +
-                "id=" + id +
-                ", title='" + title + '\'' +
-                ", gender='" + gender + '\'' +
-                ", classification='" + classification + '\'' +
-                ", duration=" + duration +
-                ", director='" + director + '\'' +
-                ", synopsis='" + synopsis + '\'' +
+                ", title='" + getTitle() + '\'' +
+                ", gender='" + getGender() + '\'' +
+                ", classification='" + getClassification() + '\'' +
+                ", duration=" + getDuration() +
+                ", director='" + getDirector() + '\'' +
+                ", synopsis='" + getSynopsis() + '\'' +
                 '}';
     }
 

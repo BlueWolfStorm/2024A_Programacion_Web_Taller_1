@@ -1,7 +1,6 @@
 package com.example.springBoot.model;
 
 public class User {
-    int id;
     String name;
     String lastName;
     String document;
@@ -12,8 +11,8 @@ public class User {
     public User() {
     }
 
-    public User(int id, String name, String lastName, String document, String email, String password) {
-        this.id = id;
+    public User(String name, String lastName, String document, String email, String password) {
+
         this.name = name;
         this.lastName = lastName;
         this.document = document;
@@ -22,13 +21,8 @@ public class User {
 
     }
 
-    public int getId() {
-        return id;
-    }
 
-    public void setId(int id) {
-        this.id = id;
-    }
+
 
     public String getName() {
         return name;
@@ -75,7 +69,6 @@ public class User {
     @Override
     public String toString() {
         return "User{" +
-                "id=" + id +
                 ", name='" + name + '\'' +
                 ", lastName='" + lastName + '\'' +
                 ", document='" + document + '\'' +

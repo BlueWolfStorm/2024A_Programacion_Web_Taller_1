@@ -2,32 +2,24 @@ package com.example.springBoot.model;
 
 import java.util.Date;
 
-public class Employee {
-    User user;
+public class Employee extends User{
+
     String position;
     Date startDate;
     Date endDate;
     float salary;
 
 
-    public Employee() {
-    }
 
-    public Employee(User user, String position, Date startDate, Date endDate, float salary) {
-        this.user = user;
+    public Employee( String name, String lastName, String document, String email, String password, String position, Date startDate, Date endDate, float salary) {
+        super(name, lastName, document, email, password);
         this.position = position;
         this.startDate = startDate;
         this.endDate = endDate;
         this.salary = salary;
     }
 
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
+    public Employee() {
     }
 
     public String getPosition() {
@@ -65,7 +57,6 @@ public class Employee {
     @Override
     public String toString() {
         return "employee{" +
-                "user=" + user +
                 ", position='" + position + '\'' +
                 ", startDate='" + startDate + '\'' +
                 ", endDate='" + endDate + '\'' +
