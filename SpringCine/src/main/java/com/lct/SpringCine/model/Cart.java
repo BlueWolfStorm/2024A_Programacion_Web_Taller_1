@@ -1,7 +1,14 @@
 package com.lct.SpringCine.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
 public class Cart {
     private int id;
     private User user;
@@ -10,7 +17,6 @@ public class Cart {
     private List<ComboCart> comboList;
     private double totalPrice;
 
-    public Cart(){}
 
     public Cart(int id, User user, List<Ticket> ticketList, List<ProductCart> productList, List<ComboCart> comboList, double totalPrice) {
         this.id = id;
@@ -21,51 +27,4 @@ public class Cart {
         this.totalPrice = totalPrice;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public User getUser() {
-        return user;
-    }
-
-    public void setUser(User user) {
-        this.user = user;
-    }
-
-    public List<Ticket> getTicketList() {
-        return ticketList;
-    }
-
-    public void setTicketList(List<Ticket> ticketList) {
-        this.ticketList = ticketList;
-    }
-
-    public List<ProductCart> getProductList() {
-        return productList;
-    }
-
-    public void setProductList(List<ProductCart> productList) {
-        this.productList = productList;
-    }
-
-    public List<ComboCart> getComboList() {
-        return comboList;
-    }
-
-    public void setComboList(List<ComboCart> comboList) {
-        this.comboList = comboList;
-    }
-
-    public double getTotalPrice() {
-        return totalPrice;
-    }
-
-    public void setTotalPrice(double totalPrice) {
-        this.totalPrice = totalPrice;
-    }
 }

@@ -1,13 +1,18 @@
 package com.lct.SpringCine.model;
 
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
+
 import java.util.List;
 
+@Getter
+@Setter
+@NoArgsConstructor
 public class Hall {
     private int id;
     private String name;
     private List<HallChair> chairList;
-
-    public Hall(){}
 
     public Hall(int id, String name, List<HallChair> chairList) {
         this.id = id;
@@ -15,27 +20,4 @@ public class Hall {
         this.chairList = chairList;
     }
 
-    public int getId() {
-        return id;
-    }
-
-    public void setId(int id) {
-        this.id = id;
-    }
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public List<HallChair> getChairList() {
-        return chairList;
-    }
-
-    public void setChairList(List<HallChair> chairList) {
-        this.chairList = chairList;
-    }
 }
