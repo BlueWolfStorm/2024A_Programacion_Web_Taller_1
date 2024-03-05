@@ -13,6 +13,7 @@ public class Chair {
     public Chair() {
     }
 
+
     public Chair(int id, String row, String column) {
         this.id = id;
         this.row = row;

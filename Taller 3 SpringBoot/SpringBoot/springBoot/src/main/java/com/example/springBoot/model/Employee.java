@@ -1,17 +1,19 @@
 package com.example.springBoot.model;
 
+import java.util.Date;
+
 public class Employee {
     User user;
     String position;
-    String startDate;
-    String endDate;
+    Date startDate;
+    Date endDate;
     float salary;
 
 
     public Employee() {
     }
 
-    public Employee(User user, String position, String startDate, String endDate, float salary) {
+    public Employee(User user, String position, Date startDate, Date endDate, float salary) {
         this.user = user;
         this.position = position;
         this.startDate = startDate;
@@ -36,19 +38,19 @@ public class Employee {
         this.position = position;
     }
 
-    public String getStartDate() {
+    public Date getStartDate() {
         return startDate;
     }
 
-    public void setStartDate(String startDate) {
+    public void setStartDate(Date startDate) {
         this.startDate = startDate;
     }
 
-    public String getEndDate() {
+    public Date getEndDate() {
         return endDate;
     }
 
-    public void setEndDate(String endDate) {
+    public void setEndDate(Date endDate) {
         this.endDate = endDate;
     }
 
