@@ -8,13 +8,12 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class ComboCart {
-    private int id, amount;
+    private int amount;
     private Cart cart;
     private Combo combo;
     private double totalPrice;
 
-    public ComboCart(int id, int amount, Cart cart, Combo combo, double totalPrice) {
-        this.id = id;
+    public ComboCart(int amount, Cart cart, Combo combo, double totalPrice) {
         this.amount = amount;
         this.cart = cart;
         this.combo = combo;

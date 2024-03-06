@@ -8,11 +8,9 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Genre {
-    private int id;
     private String name;
 
-    public Genre(int id, String name) {
-        this.id = id;
+    public Genre(String name) {
         this.name = name;
     }
 }

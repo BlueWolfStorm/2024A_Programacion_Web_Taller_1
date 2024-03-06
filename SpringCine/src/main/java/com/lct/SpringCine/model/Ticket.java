@@ -8,13 +8,12 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Ticket {
-    private int id, column;
+    private int column;
     private char row;
     private FunctionHallSchedule functionHallSchedule;
     private double price;
 
-    public Ticket(int id, int column, char row, FunctionHallSchedule functionHallSchedule, double price) {
-        this.id = id;
+    public Ticket(int column, char row, FunctionHallSchedule functionHallSchedule, double price) {
         this.column = column;
         this.row = row;
         this.functionHallSchedule = functionHallSchedule;

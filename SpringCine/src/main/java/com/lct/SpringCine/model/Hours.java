@@ -10,11 +10,9 @@ import java.time.LocalTime;
 @Setter
 @NoArgsConstructor
 public class Hours {
-    private int id;
     private LocalTime startHour, finishHour;
 
     public Hours(int id, LocalTime startHour, LocalTime finishHour) {
-        this.id = id;
         this.startHour = startHour;
         this.finishHour = finishHour;
     }

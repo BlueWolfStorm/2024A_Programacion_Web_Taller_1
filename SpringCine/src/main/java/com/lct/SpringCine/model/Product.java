@@ -8,12 +8,11 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class Product {
-    private int id, amount;
+    private int amount;
     private String name;
     private double price, vipPrice;
 
-    public Product(int id, int amount, String name, double price, double vipPrice) {
-        this.id = id;
+    public Product(int amount, String name, double price, double vipPrice) {
         this.amount = amount;
         this.name = name;
         this.price = price;

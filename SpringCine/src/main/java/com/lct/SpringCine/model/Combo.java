@@ -10,12 +10,10 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class Combo {
-    private int id;
     private List<ProductComboAmount> productList;
     private double price, vipPrice;
 
-    public Combo(int id, List<ProductComboAmount> productList, double price, double vipPrice) {
-        this.id = id;
+    public Combo(List<ProductComboAmount> productList, double price, double vipPrice) {
         this.productList = productList;
         this.price = price;
         this.vipPrice = vipPrice;

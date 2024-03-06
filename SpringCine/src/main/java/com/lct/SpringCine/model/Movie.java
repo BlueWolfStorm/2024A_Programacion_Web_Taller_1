@@ -11,14 +11,13 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class Movie {
-    private int id, duration;
+    private int duration;
     private String imageUrl, title, director, synopsis, studio;
     private List<String> cast;
     private LocalDate releaseYear;
     private Genre genre;
 
     public Movie(int id, int duration, String imageUrl, String title, String director, String synopsis, String studio, List<String> cast, LocalDate releaseYear, Genre genre) {
-        this.id = id;
         this.duration = duration;
         this.imageUrl = imageUrl;
         this.title = title;

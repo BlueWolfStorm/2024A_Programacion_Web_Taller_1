@@ -10,18 +10,19 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class HallChair {
-    private int id, columnLength;
     private Hall hall;
-    private char rowLetter;
-    private List<Integer> vipChairs;
+    private char row;
+    private int column;
+    private boolean isVip, isOccupied, isDamaged;
     private double chairPrice, vipChairPrice;
 
-    public HallChair(int id, int columnLength, Hall hall, char rowLetter, List<Integer> vipChairs, double chairPrice, double vipChairPrice) {
-        this.id = id;
-        this.columnLength = columnLength;
+    public HallChair(Hall hall, char row, int column, boolean isVip, boolean isOccupied, boolean isDamaged, double chairPrice, double vipChairPrice) {
         this.hall = hall;
-        this.rowLetter = rowLetter;
-        this.vipChairs = vipChairs;
+        this.row = row;
+        this.column = column;
+        this.isVip = isVip;
+        this.isOccupied = isOccupied;
+        this.isDamaged = isDamaged;
         this.chairPrice = chairPrice;
         this.vipChairPrice = vipChairPrice;
     }

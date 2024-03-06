@@ -10,12 +10,10 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class Hall {
-    private int id;
     private String name;
     private List<HallChair> chairList;
 
-    public Hall(int id, String name, List<HallChair> chairList) {
-        this.id = id;
+    public Hall(String name, List<HallChair> chairList) {
         this.name = name;
         this.chairList = chairList;
     }

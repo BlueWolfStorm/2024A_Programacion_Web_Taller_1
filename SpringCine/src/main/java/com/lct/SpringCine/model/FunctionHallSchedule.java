@@ -11,14 +11,12 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class FunctionHallSchedule {
-    private int id;
     private MovieFunction movieFunction;
     private Hall hall;
     private LocalDate startDate, finishDate;
     private List<Hours> hoursList;
 
-    public FunctionHallSchedule(int id, MovieFunction movieFunction, Hall hall, LocalDate startDate, LocalDate finishDate, List<Hours> hoursList) {
-        this.id = id;
+    public FunctionHallSchedule(MovieFunction movieFunction, Hall hall, LocalDate startDate, LocalDate finishDate, List<Hours> hoursList) {
         this.movieFunction = movieFunction;
         this.hall = hall;
         this.startDate = startDate;

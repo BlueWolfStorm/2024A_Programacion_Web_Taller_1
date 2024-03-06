@@ -8,13 +8,12 @@ import lombok.Setter;
 @Setter
 @NoArgsConstructor
 public class ProductCart {
-    private int id, amount;
+    private int amount;
     private Cart cart;
     private Product product;
     private double totalPrice;
 
-    public ProductCart(int id, int amount, Cart cart, Product product, double totalPrice) {
-        this.id = id;
+    public ProductCart(int amount, Cart cart, Product product, double totalPrice) {
         this.amount = amount;
         this.cart = cart;
         this.product = product;

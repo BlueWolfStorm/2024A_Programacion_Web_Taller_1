@@ -10,7 +10,6 @@ import java.util.List;
 @Setter
 @NoArgsConstructor
 public class Cart {
-    private int id;
     private User user;
     private List<Ticket> ticketList;
     private List<ProductCart> productList;
@@ -18,8 +17,7 @@ public class Cart {
     private double totalPrice;
 
 
-    public Cart(int id, User user, List<Ticket> ticketList, List<ProductCart> productList, List<ComboCart> comboList, double totalPrice) {
-        this.id = id;
+    public Cart(User user, List<Ticket> ticketList, List<ProductCart> productList, List<ComboCart> comboList, double totalPrice) {
         this.user = user;
         this.ticketList = ticketList;
         this.productList = productList;
