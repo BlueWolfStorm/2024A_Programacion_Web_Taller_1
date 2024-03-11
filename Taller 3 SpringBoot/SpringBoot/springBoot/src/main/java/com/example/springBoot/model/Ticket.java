@@ -1,5 +1,10 @@
 package com.example.springBoot.model;
 
+import lombok.Getter;
+
+
+@Getter
+@lombok.Setter
 public class Ticket {
 
     private Function function;
@@ -10,8 +15,8 @@ public class Ticket {
     public Ticket() {
     }
 
-    public Ticket(int id, Function function, Customer customer,  float cost, Chair chair, Hall hall) {
-        this.id = id;
+    public Ticket( Function function, Customer customer,  float cost, Chair chair, Hall hall) {
+
         this.function = function;
         this.customer = customer;
         this.cost = cost;
@@ -23,13 +28,11 @@ public class Ticket {
     @Override
     public String toString() {
         return "Ticket{" +
-                "id=" + id +
+
                 ", function=" + function +
                 ", customer=" + customer +
-                ", combo=" + combo +
                 ", cost=" + cost +
                 ", chair=" + chair +
-                ", hall=" + hall +
                 '}';
     }
 

@@ -1,15 +1,13 @@
-package com.example.springBoot;
+package p1.cinema.ingCinema;
 
-import com.example.springBoot.model.Combo;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Application {
+public class IngCinemaApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(IngCinemaApplication.class, args);
 	}
-	
 
 }
