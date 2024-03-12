@@ -5,18 +5,14 @@ package model;
 @lombok.AllArgsConstructor
 public class Customer {
 
-    User user;
-    String creditCard;
-    String address;
-    String phone;
+    private User user;
+    private String creditCard;
 
     @Override
     public String toString() {
         return "Customer{" +
                 ", user=" + user +
                 ", creditCard='" + creditCard + '\'' +
-                ", address='" + address + '\'' +
-                ", phone='" + phone + '\'' +
                 '}';
     }
 }

@@ -12,6 +12,9 @@ public class Chair {
     private boolean available;
     private String status;
     private Hall hall;
+    private boolean isOcuppied;
+    private float priceChair;
+    private boolean Damaged;
 
     @Override
     public String toString() {

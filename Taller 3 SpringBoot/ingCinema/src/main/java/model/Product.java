@@ -3,6 +3,7 @@ package model;
 @lombok.Setter
 @lombok.NoArgsConstructor
 @lombok.AllArgsConstructor
+@lombok.ToString
 public class Product {
 
     private String name;
@@ -11,16 +12,7 @@ public class Product {
     private int stock;
     private int porcentageDiscount;
     private boolean isDiscount;
+    private int amount;
 
-    @Override
-    public String toString() {
-        return "Product{" +
-                "name='" + name + '\'' +
-                ", price=" + price +
-                ", description='" + description + '\'' +
-                ", stock=" + stock +
-                ", porcentageDiscount=" + porcentageDiscount +
-                ", isDiscount=" + isDiscount +
-                '}';
-    }
+
 }

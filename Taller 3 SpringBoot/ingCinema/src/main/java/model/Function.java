@@ -3,23 +3,13 @@ package model;
 @lombok.Setter
 @lombok.NoArgsConstructor
 @lombok.AllArgsConstructor
-
+@lombok.ToString
 public class Function {
 
-    private Movie movie;
+    private MovieFunction movieFunction;
     private Hall hall;
     private String startTime;
     private String endTime;
     private float cost;
 
-    @Override
-    public String toString() {
-        return "Function{" +
-                "movie=" + movie +
-                ", hall=" + hall +
-                ", startTime='" + startTime + '\'' +
-                ", endTime='" + endTime + '\'' +
-                ", cost=" + cost +
-                '}';
-    }
 }
