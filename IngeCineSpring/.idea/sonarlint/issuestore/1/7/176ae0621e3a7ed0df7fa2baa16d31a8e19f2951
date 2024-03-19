@@ -1,0 +1,29 @@
+
+t	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(Á©Šğùÿÿÿÿ
+P
+java:S1172	":Remove these unused method parameters "email", "password".(ŠÛ˜Î
+M
+java:S1135
+"2Complete the task associated to this TODO comment.(“€¬‰øÿÿÿÿ
+
+java:S1172"fRemove these unused method parameters "vipStatus", "name", "address", "email", "phone", "billingInfo".(úÌ®«øÿÿÿÿ
+M
+java:S1135"2Complete the task associated to this TODO comment.(ü”Á€üÿÿÿÿ
+A
+java:S1172"+Remove this unused method parameter "cart".(èüÖ
+M
+java:S1135"2Complete the task associated to this TODO comment.(ŒŒ½¥şÿÿÿÿ
+A
+java:S1172"+Remove this unused method parameter "cart".(áşÑ
+M
+java:S1135"2Complete the task associated to this TODO comment.(ÚÒ‰ôûÿÿÿÿ
+A
+java:S1172"+Remove this unused method parameter "cart".(ïÛ
+H
+java:S1135"2Complete the task associated to this TODO comment.(ŒıßÉ
+A
+java:S1168$"+Return an empty collection instead of null.(¥¹ï
+H
+java:S1135#"2Complete the task associated to this TODO comment.(ĞüÕ
+K
+java:S1128"0Remove this unused import 'java.time.LocalDate'.(›‘¬èıÿÿÿÿ
